@@ -37,13 +37,18 @@ function validateform() {
     var message = document.Submission.message.value;
     var regex = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/gm;
     var err = document.getElementById("error");
+   var nameRegex = /^[A-Za-z]+$/;
 
     if (name == "") {
         err.innerHTML = 'The Name is Empty';
         document.Submission.name.focus(); 
         return false;
     }
-
+    if (!nameRegex(test.(name)){
+        err.innerHTML = 'Name should only contain alphabets';
+        document.Submission.name.focus(); 
+        return false;
+        
     if (name.length < 5) {
         err.innerHTML = 'Name Should Contain five Elements Please Include Fullname';
         document.Submission.name.focus();
