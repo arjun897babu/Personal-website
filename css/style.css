@@ -610,7 +610,7 @@ header .follow a:hover{
     }
 
     header{
-        transform: translateX(-400px);
+        transform: translateX(-500px);
         transition: transform 0.8s;
     }
 
